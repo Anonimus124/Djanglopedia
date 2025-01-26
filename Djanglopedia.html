@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Djanglopedia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+
+    </style>
+    <script>
+        function switchLanguage1() {
+            const header = document.querySelector('header h1');
+            const sectionHeader = document.querySelector('section h2');
+            const paragraph = document.querySelector('section p');
+            const footer = document.querySelector('footer p');
+
+            if (header.textContent === 'Djanglopedia') {
+                header.textContent = 'Djanglopedia';
+                sectionHeader.textContent = 'Something short about Djangla';
+                paragraph.innerHTML = 'This is Djangla. He is a very interesting person who often spawns in the park near the mosque (exact coordinates: 43°50\'59.9"N 18°22\'49.3"E) where he plays "pingipongi". Djangla also has his own "TikTok" account under the name <a href="https://www.tiktok.com/@djangla12?is_from_webapp=1&sender_device=pc">Djangla12</a>.';
+                footer.innerHTML = '<a href="https://youtu.be/dQw4w9WgXcQ?si=DInTKqJPkhLN5fhh" target="_blank">&copy; 2024 Djanglopedia. All rights reserved.</a>.';
+            } 
+            else {
+                header.textContent = 'Djanglopedia';
+                sectionHeader.textContent = 'Nešto kratko o Djangli';
+                paragraph.innerHTML = 'Ovo je Djangla. On je jako zanimljiv čovjek koji se često spawnuje u parku kod džamije (tačne koordinate: 43°50\'59.9"N 18°22\'49.3"E) gdje igra "pingipongi". Djangla takođe ima i svoj "tiki toki" account pod nazivom <a href="https://www.tiktok.com/@djangla12?is_from_webapp=1&sender_device=pc">Djangla12</a>.';
+                footer.innerHTML = '<a href="https://youtu.be/dQw4w9WgXcQ?si=DInTKqJPkhLN5fhh" target="_blank">&copy; 2024 Djanglopedia. Sva prava zadržana.</a>.';
+            }
+        }
+        function switchLanguage2() {
+            const header = document.querySelector('header h1');
+            const sectionHeader = document.querySelector('section h2');
+            const paragraph = document.querySelector('section p');
+            const footer = document.querySelector('footer p');
+
+            header.textContent = 'Djanglopedia';
+            sectionHeader.textContent = 'Etwas Kurzes über Djangla';
+            paragraph.innerHTML = 'Das ist Djangla. Er ist eine sehr interessante Person, die oft im Park in der Nähe der Moschee erscheint (genaue Koordinaten: 43°50\'59,9"N 18°22\'49,3"E), wo er Pingpong spielt. Djangla hat auch einen eigenen „TikTok“-Account unter dem Namen <a href="https://www.tiktok.com/@djangla12?is_from_webapp=1&sender_device=pc">Djangla12</a>.';
+            footer.innerHTML = '<a href="https://youtu.be/dQw4w9WgXcQ?si=DInTKqJPkhLN5fhh" target="_blank">&copy; 2024 Djanglopedia. Alle Rechte vorbehalten</a>.';
+        }
+        function switchLanguage3() {
+            const header = document.querySelector('header h1');
+            const sectionHeader = document.querySelector('section h2');
+            const paragraph = document.querySelector('section p');
+            const footer = document.querySelector('footer p');
+
+            header.textContent = 'جانجوبيديا';
+            sectionHeader.textContent = 'شيء قصير عن هذا الشخص';
+            paragraph.innerHTML = 'هذه جانجلا. إنه رجل مثير للاهتمام وكثيراً ما نراه في الحديقة القريبة من المسجد (الإحداثيات الدقيقة: 43°50\'59.9"N 18°22\'49.3"E) حيث يلعب كرة الطاولة. لدى Djangla أيضًا حساب tiktok خاص بها يسمى <a href="https://www.tiktok.com/@djangla12?is_from_webapp=1&sender_device=pc">Djangla12</a>.';
+            footer.innerHTML = '<a href="https://youtu.be/dQw4w9WgXcQ?si=DInTKqJPkhLN5fhh" target="_blank">&copy; 2024 Djanglopedia. كل الحقوق محفوظة.</a>.';
+        }
+        function switchLanguage4() {
+            const header = document.querySelector('header h1');
+            const sectionHeader = document.querySelector('section h2');
+            const paragraph = document.querySelector('section p');
+            const footer = document.querySelector('footer p');
+
+            header.textContent = 'Djanglopedia';
+            sectionHeader.textContent = 'Djangla hakkında kısa bir şey';
+            paragraph.innerHTML = 'Bu Djangla. Kendisi sıklıkla caminin yakınındaki parkta görülen çok ilginç bir kişidir (tam koordinatlar: 43°50\'59.9"N 18°22\'49.3"E),pinpon oynadığı yer. Djanglanın ayrıca "TikTok" adı altında kendi hesabı var. <a href="https://www.tiktok.com/@djangla12?is_from_webapp=1&sender_device=pc">Djangla12</a>.';
+            footer.innerHTML = '<a href="https://youtu.be/dQw4w9WgXcQ?si=DInTKqJPkhLN5fhh" target="_blank">&copy; 2024 Djanglopedia. Her hakkı saklıdır</a>.';
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Djanglopedia</h1>
+    </header>
+
+    <button1 type="button" onclick="switchLanguage1()">
+        <img src="https://myflag.com.au/wp-content/uploads/great-britain-country-flag.jpg " alt="UK Flag" style="max-width: 30px;">
+    </button1>
+    <button2 type="button" onclick="switchLanguage2()">
+        <img src="https://myflag.com.au/wp-content/uploads/germany-trilobal-flag-heavy-duty.jpg" alt="German flag" style="max-width: 30px;">
+    </button2>
+    <button3 type="button" onclick="switchLanguage3()">
+        <img src="https://myflag.com.au/wp-content/uploads/saudi-arabia-national-flag.jpg" alt="Saudi flag" style="max-width: 30px;">
+    </button3>
+    <button4 type="button" onclick="switchLanguage4()">
+        <img src="https://www.nationalflags.shop/WebRoot/vilkasfi01/Shops/2014080403/53E6/2F69/931C/5410/657E/0A28/100B/0463/Flag_of_Turkey.png" alt="Turkey flag" style="max-width: 30px;">
+    </button4>
+
+    <section>
+        <h2><b>Nešto kratko o Djangli</b></h2>
+        <p>Ovo je Djangla. On je jako zanimljiv čovjek koji se često spawnuje u parku kod džamije (tačne koordinate:43°50'59.9"N 18°22'49.3"E) gdje igra "pingipongi". Dijangla takođe ima i svoj "tiki toki" account pod nazivom  <a href="https://www.tiktok.com/@djangla12?is_from_webapp=1&sender_device=pc">Djangla12</a>.</p>
+        <img src="https://i.imgur.com/mWXfDun.jpeg" alt="Opis slike" style="max-width: 100%; height: auto;">
+    </section>
+
+    <footer>
+        <p><a href="https://youtu.be/dQw4w9WgXcQ?si=DInTKqJPkhLN5fhh" target="_blank">&copy; 2025 Djanglopedia. Sva prava zadržana.</a>.</p>
+    </footer>
+</body>
+
+</html>
